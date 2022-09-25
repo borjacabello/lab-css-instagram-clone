@@ -4,13 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram Clone</title>
-    <!-- don't forget to link your styles -->
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-    Instagram Capture and Share the World's Moments Instagram is a fast, beautiful and fun way to share your life with
-    friends and family. Take a picture or video, choose a filter to transform its look and feel, then post to Instagram
-    &mdash; it's that easy. You can even share to Facebook, Twitter, Tumblr and more. It's a new way to see the world.
-    Oh yeah, did we mention it's free? Download on the App Store Get it on Google Play About Us Support Blog Press API
-    Jobs Privacy Terms &copy; 2014 Instagram
+    <header id = "header">
+
+      <div id="upper-header">
+
+        <div id = "circles-div">
+          <div class="circle red"></div>
+          <div class="circle yellow"></div>
+          <div class="circle green"></div>
+        </div>
+
+        <div id = "tabs-div">
+          <div id = "tab-one">
+            <div id = "black-box">
+              <div class = "circle circle-tab green"></div>
+            </div>
+            <p>ZJyFdvt.png (1090x731)</p>
+            <a href="#">
+              <img src="./images/close.png" alt="close-tab-image" id ="close-image">
+            </a>
+          </div>
+
+          <div id = "tab-two"></div>
+        </div>
+        
+        <img src="./images/man-with-hat.png" alt="man-with-hat" id = "man-with-hat">
+      </div>
+
+      <div id = "lower-header">
+        <div id = "arrow-recharge-buttons">
+          <a href="#"><img src="./images/arrow.png" alt="left-arrow" class = "icon"></a>
+          <a href="#"><img src="./images/right-arrow.png" alt="right-arrow" class = "icon"></a>
+          <a href="#"><img src="./images/repeat.png" alt="circular-repeat" class = "icon"></a>
+        </div>
+
+        <div id = "search-bar">
+          <form>
+            <label for = "bar">
+              <img src="./images/search.png" alt="search" id = "magnifying-glass">
+              <input type="text" name="search-bar" id="bar">
+            </label>
+          </form>
+        </div>
+
+        <a href="#" id = "menu-anchor"><img src="./images/menu.png" alt="bar-menu" class = "icon"></a>
+      </div>
+
+    </header>
+
+    <section id = "main-section">
+
+      <div id = "grid-phone-div">
+        <img src="./images/phones.png" alt="phones">
+      </div>
+
+      <div id = "grid-instalogo-div">
+        <div id = "instalogo-home-div">
+          <img src="./images/brand.png" alt="brand-logo">
+          <a id = "anchor-block-log" href = "#">
+            <img src="./images/home.png" alt="home-logo">
+            <p>Log in</p>
+          </a>
+        </div>
+        <div id = "capture-title-div">
+          <h1>Capture and Share the World's Moments</h1>
+          <p id = "first-paragraph">Instagram is a fast, beautiful and fun way to share your life with
+            friends and family.</p>
+          <p id = "second-paragraph" >Take a picture or video, choose a filter to transform its look and feel, then post to Instagram
+            &mdash; it's that easy. You can even share to Facebook, Twitter, Tumblr and more. It's a new way to see the world.</p>
+          <p id = "last-paragraph">Oh yeah, did we mention it's free?</p>
+          <div id = "google-images">
+            <img src="./images/badge-iphone.png" alt="app-store">
+            <img src="./images/badge-android.png" alt="get-on-google-play" id = "google-image">
+          </div>
+        </div>
+      </div>
+
+      <div id = "grid-links-div">
+        <ul>
+          <li><a href = "#">About Us</a></li>
+          <li><a href = "#">Support</a></li>
+          <li><a href = "#">Blog</a></li>
+          <li><a href = "#">Press</a></li>
+          <li><a href = "#">API</a></li>
+          <li><a href = "#">Jobs</a></li>
+          <li><a href = "#">Privacy</a></li>
+          <li><a href = "#">Terms</a></li>
+          <li>&copy; 2014 Instagram</li>
+        </ul>
+      </div>
+
+    </section>
   </body>
 </html>

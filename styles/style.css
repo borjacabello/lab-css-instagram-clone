@@ -4,7 +4,353 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  width: 100%;
+  height: 100vh;
+  /*background-color: #1c5380;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0;
+}
+
+/* --------- HEADER --------- */
+#header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10%;
+}
+
+#upper-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  padding: 0 15px;
+  background: linear-gradient(to bottom, #1c5380, #06365f)
+}
+
+#circles-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 70px;
+  gap: 7px;
+}
+
+.circle {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+#black-box {
+  position: relative;
+  background-color: black;
+  width: 23px;
+  height: 22px;
+  left: 6px;
+  top: -4px;
+}
+
+.circle-tab {
+  position: relative;
+  left: 3px;
+  top: 2px;
+}
+
+#tabs-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  height: 2em;
+  position: absolute;
+  left: 110px;
+}
+
+#tab-one {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: rgba(217, 217, 215, 1);
+  border-radius: 4px 4px 0 0;
+  transform-origin: right;
+}
+
+#tab-one p {
+  margin: 0 auto;
+  height: 90%;
+  position: relative;
+  top: 2px;
+  left: -11px;
+  font-size: 15px;
+}
+
+#tabs-div a {
+  display: block;
+  position: relative;
+  margin-right: 8px;
+  top: 2px;
+}
+
+#close-image {
+  width: 11px;
+  height: 11px;
+  position: relative;
+  top: -5px;
+}
+
+#tab-two {
+  width: 40px;
+  height: 22px;
+  background-color: rgba(217, 217, 215, 0.8);
+  transform: skewX(12deg);
+  border-radius: 3px;
+}
+
+#man-with-hat {
+  height: 40px;
+  width: 40px;
+}
+
+
+
+#lower-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(217, 217, 215, 1);
+  padding: 0 12px;
+}
+
+#arrow-recharge-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95px
+}
+
+#arrow-recharge-buttons a {
+  display: flex;
+  align-items: center;
+}
+
+#search-bar {
+  width: 85%;
+  height: 75%;
+  background-color: white;
+  border-radius: 4px;
+  padding: 2px;
+  margin-left: 4px;
+  border: solid 1px #06365f;
+}
+
+form {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: transparent;
+}
+
+label {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.icon {
+  width: 21px;
+  height: 21px;
+}
+
+#magnifying-glass {
+  width: 14px;
+  height: 15px;
+  margin-left: 6px;
+}
+
+input {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  margin-left: 10px;
+}
+
+textarea:focus, input:focus {
+  height: 100%;
+  width: 100%;
+  outline: none;
+}
+
+#menu-anchor {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+
+
+/* --------- MAIN SECTION --------- */
+#main-section {
+  width: 100%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  background: linear-gradient(to bottom, #1c5380, #06365f 40%, white 40%);
+  padding: 50px;
+  gap: 50px;
+}
+
+#grid-phone-div {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+}
+
+#grid-instalogo-div {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background: linear-gradient(to bottom, #1c5380, #06365f 33%, white 33%);
+  padding-top: 90px;
+}
+
+#grid-links-div {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+#instalogo-home-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+}
+
+#anchor-block-log {
+  width: 110px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  background: linear-gradient(to bottom, #1c5380, #06365f);
+  margin-right: 20px;
+  border: solid 1px #06365f;
+}
+
+#capture-title-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 40px 40px;
+}
+
+h1 {
+  width: 320px;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #06365f
+}
+
+#first-paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#second-paragraph {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+#last-paragraph {
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
+
+#google-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#google-image {
+  margin-left: 25px;
+}
+
+#grid-links-div {
+  display: flex;
+  align-items: center;
+}
+
+#grid-links-div ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+  padding: 0 100px;
+}
+
+#grid-links-div ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+  color: #1c5380;
+}
+
+li:last-of-type {
+  color: grey;
 }
